@@ -4,6 +4,7 @@
   padding: 0px;
   font-family: Montserrat; 
   font-weight: 400;
+  color: #515076;
 }
 
 .container {
@@ -14,8 +15,8 @@
   background: none;
 }
 
-.background-image{
-  background-image: url(img/fon.png);
+.background-image {
+  background-image: url("/img/background-flowers.png");
   background-repeat: no-repeat;
   position: absolute;
   width: 790px;
@@ -23,7 +24,7 @@
   bottom: 1118px;
   left: 85px;
   z-index: -1;
-  }
+}
 
 .product-list-container {
   display: flex;
@@ -41,7 +42,7 @@
   text-align: center;
 }
 
-.card-container{
+.card-container {
   width: 340px;
   height: 573px;
   padding: 25px;
@@ -61,29 +62,26 @@
 }
 
 .product-name {
-  color: #515076;
   font-size: 20px;
   line-height: 27px;
   font-weight: 700;
 }
 
 .product-descripton {
-  color: #515076;
   font-size: 13px;
   line-height: 18px;
   margin-top: 5px;
   margin-bottom: 15px;
 }
 
-.product-compaund{
-  color: #515076;
+.product-compaund {
   font-size: 13px;
   line-height: 18px;
   margin-left: 14px;
   margin-bottom: 25px;
 }
 
-.product-compaund-item{
+.product-compaund-item {
   margin-top: 5px;
   list-style: circle;
 }
@@ -92,19 +90,14 @@
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  color: #515076;
 }
 
 .product-price {
   font-size: 20px;
   line-height: 24px;
-  color: #515076;
 }
 
 .product-price-container {
   display: flex;
   justify-content: space-between;
-  
 }
-
-
