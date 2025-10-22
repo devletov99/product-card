@@ -35,7 +35,7 @@
   margin: auto;
 }
 
-.main-heading {
+.main-Title {
   font-size: 70px;
   line-height: 78px;
   margin: 220px 132px 110px 132px;
@@ -115,7 +115,7 @@
   margin-bottom: 50px;
 }
 
-#button-item {
+.button-item {
   width: 200px;
   height: 40px;
   background-color: #515076;
@@ -127,6 +127,6 @@
   transition: background-color 0.3s; 
 }
 
-#button-item.bg-red {
+.button-item.bg-red {
   background-color: #FF0000; 
 }

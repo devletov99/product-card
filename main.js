@@ -1,9 +1,8 @@
-const productCard = document.querySelector('.card-container');
-const changeColorCardButton = document.querySelector('.change-color-card-button');
-const redColorHash = '#fb1010'; 
-const grenColorHash = '#13b210ff'; 
-
 // поменять цвет первой карточки
+
+const productCard = document.querySelector('.card-container');
+const changeColorCardButton = document.querySelector('#change-color-card-button');
+const redColorHash = '#fb1010'; 
 
 changeColorCardButton.addEventListener('click', () => {
   productCard.style.backgroundColor = redColorHash;
@@ -12,15 +11,16 @@ changeColorCardButton.addEventListener('click', () => {
 // поменять цвет всех карточек
 
 const productCards = document.querySelectorAll('.card-container');
-const changeColorTheCardsButton = document.querySelector('.change-color-the-cards-button');
+const changeColorCardsButton = document.querySelector('#change-color-cards-button');
+const greenColorHash = '#13b210ff'; 
 
-changeColorTheCardsButton.addEventListener('click', () => {
-  productCards.forEach((card) => card.style.backgroundColor = grenColorHash)   
+changeColorCardsButton.addEventListener('click', () => {
+  productCards.forEach((card) => card.style.backgroundColor = greenColorHash)   
 }) 
 
 // открыть страницу google.com
 
-const openGoogleButton = document.querySelector('.open-google');
+const openGoogleButton = document.querySelector('#open-google');
 
 openGoogleButton.addEventListener('click', () => {
   answer = confirm('Вы действительно хотите перейти на страницу Google?');
@@ -34,7 +34,7 @@ openGoogleButton.addEventListener('click', () => {
 
 // вывести в консоль сообщение при клике на кнопку
 
-const openLogButton = document.querySelector('.open-consol-log');
+const openLogButton = document.querySelector('#open-console-log');
 
 openLogButton.addEventListener('click', () => openConsoleLogButton('ДЗ№4')) 
 
@@ -45,15 +45,16 @@ function openConsoleLogButton(message) {
 
 // вывести в консоль сообщение при наведении на заголовок
 
-const mainheading = document.querySelector('.main-heading');
+const mainTitle = document.querySelector('.main-Title');
+const headerContent = mainTitle.textContent;
 
-mainheading.addEventListener('mouseover', () => {
-  console.log('Выбери свой продукт')
+mainTitle.addEventListener('mouseover', () => {
+  console.log (headerContent)
 })
 
 // поменять цвет кнопки при клике
 
-const changeButtonColor = document.querySelector('.change-button-color');
+const changeButtonColor = document.querySelector('#change-button-color');
 
 changeButtonColor.addEventListener('click', () => {
   changeButtonColor.classList.toggle('bg-red')
