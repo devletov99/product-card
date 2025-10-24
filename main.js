@@ -34,18 +34,18 @@ openGoogleButton.addEventListener('click', () => {
 
 // вывести в консоль сообщение при клике на кнопку
 
-const openLogButton = document.querySelector('#open-console-log');
+const outputLogButton = document.querySelector('#output-console-log-button');
 
-openLogButton.addEventListener('click', () => openConsoleLogButton('ДЗ№4')) 
+outputLogButton.addEventListener('click', () => outputConsoleLogButton('ДЗ№4')) 
 
-function openConsoleLogButton(message) {
+function outputConsoleLogButton(message) {
   alert(message);
   console.log(message);
-}
+};
 
 // вывести в консоль сообщение при наведении на заголовок
 
-const mainTitle = document.querySelector('.main-Title');
+const mainTitle = document.querySelector('.main-title');
 const headerContent = mainTitle.textContent;
 
 mainTitle.addEventListener('mouseover', () => {
