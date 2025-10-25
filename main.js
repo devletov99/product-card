@@ -36,12 +36,10 @@ openGoogleButton.addEventListener('click', () => {
 
 const outputLogButton = document.querySelector('#output-console-log-button');
 
-outputLogButton.addEventListener('click', () => outputConsoleLogButton('ДЗ№4')) 
-
-function outputConsoleLogButton(message) {
-  alert(message);
-  console.log(message);
-};
+outputLogButton.addEventListener('click', () => {
+  console.log('дз№4');
+  alert('дз№4');
+});
 
 // вывести в консоль сообщение при наведении на заголовок
 
