@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
+  margin: 0;
   padding: 0px;
   font-family: Montserrat; 
   font-weight: 400;
@@ -35,7 +35,7 @@
   margin: auto;
 }
 
-.main-heading {
+.main-title {
   font-size: 70px;
   line-height: 78px;
   margin: 220px 132px 110px 132px;
@@ -78,11 +78,12 @@
   margin-bottom: 15px;
 }
 
-.product-compaund {
+.product-compound {
   font-size: 13px;
   line-height: 18px;
-  margin-left: 14px;
+  margin-left: 15px;
   margin-bottom: 25px;
+  margin-top: 5px;
 }
 
 .product-compaund-item {
@@ -105,4 +106,27 @@
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
+}
+
+.product-catalog__button {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.button-item {
+  width: 200px;
+  height: 40px;
+  background-color: #515076;
+  border: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.button-item.bg-red {
+  background-color: #FF0000; 
 }
