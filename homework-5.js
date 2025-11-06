@@ -1,43 +1,43 @@
 //  Создать функцию, которая принимает 2 параметра: город и температуру.
 
 const showTemperatureCity = (city, temperature) => {
-  console.log(`Сейчас ${city} температура - ${temperature} градусов по Цельсию.`);
+  console.log(`Сейчас в городе ${city} температура - ${temperature} градусов по Цельсию.`);
 }
-showTemperatureCity('в Махачкале', 9);
+showTemperatureCity('Махачкала', 9);
 
 //   Создать переменную, которая хранит внутри себя скорость звука.
 
-const speedSound = 343;
+const SPEED_SOUND = 343;
 
-const speed = speed => {
-  if (speed >= speedSound)
+const getSpeedComparison = speed => {
+  if (speed >= SPEED_SOUND)
     console.log('Сверхзвуковая скорость');
  else {
     console.log('Дозвуковая скорость');
   } 
 }
-speed(340);
+getSpeedComparison(340);
 
 // Создать переменную №1, которая содержит продукт и переменную №2, которая содержит его цену.
 
 const product = 'Айфон 17 про';
 const price = 5000;
 
-const money = budget => {
+const buyPhone = budget => {
   if (budget >= price)
-    console.log(`${product} пробреён. Спасибо за покупку!`);
+    console.log(`${product} пробретён. Спасибо за покупку!`);
   else{
     console.log(`Вам не хватает ${price - budget}$, пополните баланс.`);
   } 
 }
-money(4000);
+buyPhone(4000);
 
 // Функция для вычисления значений.
 
-const calculateValue = (a,b) =>{
+const dividingValue = (a, b) =>{
   console.log(a / b);
 }
-calculateValue(90, 30);
+dividingValue(90, 30);
 
 // Данные пользователя.
 
