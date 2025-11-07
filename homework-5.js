@@ -9,28 +9,28 @@ showTemperatureCity('Махачкала', 9);
 
 const SPEED_SOUND = 343;
 
-const getSpeedComparison = speed => {
+const compareSpeed = speed => {
   if (speed >= SPEED_SOUND)
     console.log('Сверхзвуковая скорость');
  else {
     console.log('Дозвуковая скорость');
   } 
 }
-getSpeedComparison(340);
+compareSpeed(340);
 
 // Создать переменную №1, которая содержит продукт и переменную №2, которая содержит его цену.
 
 const product = 'Айфон 17 про';
 const price = 5000;
 
-const buyPhone = budget => {
+const buyProduct = budget => {
   if (budget >= price)
     console.log(`${product} пробретён. Спасибо за покупку!`);
-  else{
+  else {
     console.log(`Вам не хватает ${price - budget}$, пополните баланс.`);
   } 
 }
-buyPhone(4000);
+buyProduct(4000);
 
 // Функция для вычисления значений.
 
