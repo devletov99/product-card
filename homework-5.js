@@ -12,7 +12,7 @@ const SPEED_SOUND = 343;
 const compareSpeed = speed => {
   if (speed >= SPEED_SOUND)
     console.log('Сверхзвуковая скорость');
- else {
+  else {
     console.log('Дозвуковая скорость');
   } 
 }
